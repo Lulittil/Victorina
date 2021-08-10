@@ -1,0 +1,9 @@
+lobahs18 1234 01.10.2003 admin
+ilya01 123 01.10.2003 user Geography-10 Biology-5
+polina2003 01234 06.08.2003 user
+lina3 4567 03.09.2001 user
+wewe wewe 31.12.2003 user
+werdwe werdwe 31.12.2003 user
+lobahs19 5678 31.12.2003 user
+Lobahs18 asdsd 31.12.2003 user
+

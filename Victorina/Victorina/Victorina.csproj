@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BEED797-8BB1-4A35-AD1E-C2EA19FDA375}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Victorina</RootNamespace>
+    <AssemblyName>Victorina</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biology.Designer.cs">
+      <DependentUpon>Biology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBank.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geography.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geography.Designer.cs">
+      <DependentUpon>Geography.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainVictory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainVictory.Designer.cs">
+      <DependentUpon>MainVictory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrForm.Designer.cs">
+      <DependentUpon>RegistrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResBefore.Designer.cs">
+      <DependentUpon>ResBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOP-20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOP-20.Designer.cs">
+      <DependentUpon>TOP-20.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Biology.resx">
+      <DependentUpon>Biology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geography.resx">
+      <DependentUpon>Geography.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainVictory.resx">
+      <DependentUpon>MainVictory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistrForm.resx">
+      <DependentUpon>RegistrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResBefore.resx">
+      <DependentUpon>ResBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOP-20.resx">
+      <DependentUpon>TOP-20.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QuizDataSet.xsc">
+      <DependentUpon>QuizDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSet.xss">
+      <DependentUpon>QuizDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet1.xsc">
+      <DependentUpon>QuizDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSet1.xss">
+      <DependentUpon>QuizDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet2.xsc">
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSet2.xss">
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet3.xsc">
+      <DependentUpon>QuizDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSet3.xss">
+      <DependentUpon>QuizDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
